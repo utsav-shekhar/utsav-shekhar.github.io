@@ -6,36 +6,39 @@
 <title>Utsav Shekhar | Applied Scientist</title>
 
 <style>
-body {
+body{
   margin:0;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto;
   background:#0f172a;
   color:#e2e8f0;
   line-height:1.6;
 }
-
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:40px 20px;
-}
-
-h1{font-size:48px;margin-bottom:10px;}
-h2{color:#38bdf8;margin-top:60px;}
+.container{max-width:1000px;margin:auto;padding:40px 20px;}
+.hero{padding:80px 0;}
+h1{font-size:56px;margin-bottom:10px;}
+h2{color:#38bdf8;margin-top:70px;}
+h3{margin-top:0;color:#94a3b8;}
 a{color:#38bdf8;text-decoration:none}
-
-.hero{
-  padding-top:80px;
-  padding-bottom:80px;
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  background:#38bdf8;
+  color:#000;
+  border-radius:10px;
+  margin-top:15px;
+  font-weight:bold;
 }
-
 .card{
   background:#111827;
   padding:25px;
   border-radius:14px;
   margin-top:20px;
 }
-
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
 .tag{
   display:inline-block;
   background:#1f2937;
@@ -50,30 +53,60 @@ a{color:#38bdf8;text-decoration:none}
 <body>
 <div class="container">
 
+<!-- HERO -->
 <section class="hero">
 <h1>Utsav Shekhar</h1>
-<h3>Applied Scientist • NLP • LLMs • Machine Learning</h3>
+<h3>Applied Scientist • LLMs • NLP • Multimodal ML</h3>
 
 <p>
-Applied Scientist with research in NLP and Multimodal AI.
-ACL SRW • Amazon • IBM Research
+I build large-scale ML and LLM systems.  
+ACL-published researcher with experience shipping production ML at Amazon and IBM Research.
 </p>
 
+<a class="btn" href="resume.pdf">Download Resume</a>
+
 <p>
-<a href="mailto:yourmail@gmail.com">Email</a> •
+<a href="mailto:utsavshekhar12@gmail.com">Email</a> •
 <a href="https://github.com/utsav-shekhar">GitHub</a> •
-<a href="#">Resume</a>
+<a href="https://www.linkedin.com/in/utsav-shekhar-ab7170224/">LinkedIn</a> •
+<a href="https://scholar.google.com/citations?user=exQCd6cAAAAJ">Google Scholar</a>
 </p>
 </section>
 
+<!-- ABOUT -->
 <section>
-<h2>About Me</h2>
+<h2>About</h2>
 <div class="card">
-I work on Natural Language Processing, LLMs and Machine Learning systems.
-My research focuses on multimodal learning, low-resource languages and RAG systems.
+Applied Scientist specializing in LLM systems, RAG pipelines, multi-agent architectures and multimodal machine learning.
+I enjoy building research ideas into production-ready systems.
 </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section>
+<h2>Experience</h2>
+<div class="grid">
+
+<div class="card">
+<b>Amazon — Applied Scientist Intern</b>
+<p>Built multi-stage retrieval system for product search.</p>
+<p>Improved AUC 93 → 96.97 and reduced latency 24×.</p>
+</div>
+
+<div class="card">
+<b>IBM Research — Research Intern</b>
+<p>Built multi-agent LLM framework for Kubernetes monitoring.</p>
+</div>
+
+<div class="card">
+<b>Sony Research — Causal Inference Intern</b>
+<p>Building multi-agent simulator for SonyLIV platform.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PUBLICATIONS -->
 <section>
 <h2>Publications</h2>
 <div class="card">
@@ -82,48 +115,45 @@ ACL 2025 Student Research Workshop
 </div>
 </section>
 
+<!-- PROJECTS -->
 <section>
-<h2>Experience</h2>
-
-<div class="card">
-<b>Applied Scientist Intern — Amazon</b>
-<p>Large Language Models and ML systems.</p>
-</div>
-
-<div class="card">
-<b>Research Intern — IBM Research</b>
-<p>Machine learning and NLP research.</p>
-</div>
-
-</section>
-
-<section>
-<h2>Projects</h2>
-
-<div class="card">
-<b>Legal RAG for Criminal Law</b>
-<p>Retrieval-augmented system for legal assistance using LLMs.</p>
-</div>
+<h2>Featured Projects</h2>
+<div class="grid">
 
 <div class="card">
 <b>Multimodal Protest Music Analysis</b>
-<p>Lyrics + audio modelling for protest song detection.</p>
+<p>Transformer lyric models + audio features for protest song detection.</p>
+<a href="https://github.com/utsav-shekhar">View Project →</a>
 </div>
 
+<div class="card">
+<b>Legal RAG for Criminal Law</b>
+<p>Domain-specific RAG pipeline reducing hallucinations.</p>
+<a href="https://github.com/utsav-shekhar">View Project →</a>
+</div>
+
+<div class="card">
+<b>Code-Mixed Machine Translation</b>
+<p>Transformer and LLM approaches for Hinglish MT.</p>
+<a href="https://github.com/utsav-shekhar">View Project →</a>
+</div>
+
+</div>
 </section>
 
+<!-- SKILLS -->
 <section>
 <h2>Skills</h2>
-
 <span class="tag">Python</span>
 <span class="tag">PyTorch</span>
 <span class="tag">Transformers</span>
 <span class="tag">LLMs</span>
-<span class="tag">NLP</span>
-<span class="tag">FastAPI</span>
+<span class="tag">RAG</span>
+<span class="tag">LangGraph</span>
+<span class="tag">Kubernetes</span>
+<span class="tag">AWS</span>
+<span class="tag">Docker</span>
 <span class="tag">PostgreSQL</span>
-<span class="tag">React</span>
-
 </section>
 
 </div>
